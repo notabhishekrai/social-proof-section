@@ -1,0 +1,54 @@
+@import url("https://fonts.googleapis.com/css2?family=League+Spartan:wght@100;300;400;500;600;700;900&display=swap");
+
+$very-dark-magenta: hsl(300, 43%, 22%);
+$soft-pink: hsl(333%, 80%, 67%);
+$dark-grayish-magenta: hsl(303, 10%, 53%);
+$light-grayish-magenta: hsl(300, 24%, 96%);
+$white: hsl(0, 0%, 100%);
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.5rem;
+  position: relative;
+
+  &::before {
+    content: url("../images/bg-pattern-top-desktop.svg");
+    position: fixed;
+  }
+  &::after {
+    content: url("../images/bg-pattern-bottom-desktop.svg");
+    position: fixed;
+    bottom: 0%;
+    right: 0;
+    z-index: 1;
+  }
+}
+#main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.flex {
+  display: flex;
+}
+
+.grid {
+  display: grid;
+}
