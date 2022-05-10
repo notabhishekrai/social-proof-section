@@ -147,7 +147,7 @@ body {
     &-graphs {
       flex-basis: 60%;
       .graph {
-        width: 60%;
+        max-width: 500px;
         flex-direction: row;
         align-items: center;
         justify-content: space-around;
@@ -172,6 +172,7 @@ body {
 
     .card {
       padding: 3em 2em;
+      max-width: 400px;
     }
     .card1 {
       align-self: start;

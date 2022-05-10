@@ -145,7 +145,7 @@ body::after {
     flex-basis: 60%;
   }
   .flex-graphs .graph {
-    width: 60%;
+    max-width: 500px;
     flex-direction: row;
     align-items: center;
     justify-content: space-around;
@@ -167,6 +167,7 @@ body::after {
   }
   .grid .card {
     padding: 3em 2em;
+    max-width: 400px;
   }
   .grid .card1 {
     align-self: start;
