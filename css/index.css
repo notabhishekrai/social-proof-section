@@ -141,11 +141,14 @@ body::after {
     flex-basis: 30%;
     text-align: left;
   }
+  .flex-contents h1 {
+    font-size: 5rem;
+  }
   .flex-graphs {
-    flex-basis: 60%;
+    flex-basis: 600px;
   }
   .flex-graphs .graph {
-    max-width: 500px;
+    width: 500px;
     flex-direction: row;
     align-items: center;
     justify-content: space-around;
