@@ -3,10 +3,12 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "League Spartan", sans-serif;
 }
 
 html {
   font-size: 62.5%;
+  line-height: 1.2;
 }
 
 body {
@@ -42,9 +44,138 @@ body::after {
 
 .flex {
   display: flex;
+  flex-direction: column;
+  gap: 2.6rem;
+}
+
+.flex-contents {
+  text-align: center;
+}
+
+.flex-contents h1 {
+  color: #502050;
+  margin-bottom: 1.6rem;
+  font-weight: 700;
+  font-size: 3.6rem;
+}
+
+.flex-contents p {
+  color: #937b92;
+  font-size: 1.8rem;
+}
+
+.flex-graphs {
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+}
+
+.flex-graphs .graph {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  gap: 1rem;
+  background-color: #f7f2f7;
+  padding: 2rem;
+  border-radius: 13px;
+}
+
+.flex-graphs .graph p {
+  font-weight: 700;
+  color: #502050;
 }
 
 .grid {
   display: grid;
+  grid-row-gap: 2rem;
+  margin-top: 3.6rem;
+}
+
+.grid .card {
+  background-color: #502050;
+  padding: 2rem;
+  border-radius: 13px;
+  color: white;
+}
+
+.grid .card-head {
+  display: flex;
+  gap: 2rem;
+  margin-bottom: 1.6rem;
+  align-items: center;
+}
+
+.grid .card-head-img {
+  width: 40px;
+  height: 40px;
+}
+
+.grid .card-head-img img {
+  border-radius: 50%;
+  width: 100%;
+  height: 100%;
+}
+
+.grid .card-head-names h3 {
+  color: white;
+  font-weight: 400;
+  margin-bottom: 0.5rem;
+}
+
+.grid .card-head-names p {
+  color: rgba(238, 104, 164, 0.6);
+  font-weight: 100;
+}
+
+.grid .card-body {
+  color: #f7f2f7;
+  font-weight: 300;
+}
+
+@media all and (min-width: 1000px) {
+  .flex {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .flex-contents {
+    flex-basis: 30%;
+    text-align: left;
+  }
+  .flex-graphs {
+    flex-basis: 60%;
+  }
+  .flex-graphs .graph {
+    width: 60%;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+  }
+  .flex-graphs .graph1 {
+    align-self: flex-start;
+  }
+  .flex-graphs .graph2 {
+    align-self: center;
+  }
+  .flex-graphs .graph3 {
+    align-self: flex-end;
+  }
+  .grid {
+    margin-top: 6rem;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 280px;
+    grid-gap: 2rem;
+  }
+  .grid .card {
+    padding: 3em 2em;
+  }
+  .grid .card1 {
+    align-self: start;
+  }
+  .grid .card2 {
+    align-self: center;
+  }
+  .grid .card3 {
+    align-self: end;
+  }
 }
 /*# sourceMappingURL=index.css.map */
